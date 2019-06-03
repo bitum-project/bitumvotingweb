@@ -136,15 +136,15 @@ func loadConfig() (*config, error) {
 	var defaultRPCPort string
 
 	if cfg.TestNet {
-		activeNetParams = &chaincfg.TestNet3Params
+		activeNetParams = &chaincfg.TestNetParams
 		blockVersion = blockVersionTest
-		blockExplorerURL = "https://testnet.bitumdata.org"
-		defaultRPCPort = "19109"
+		blockExplorerURL = "https://testnet.bitum.io"
+		defaultRPCPort = "19209"
 	} else {
 		activeNetParams = &chaincfg.MainNetParams
 		blockVersion = blockVersionMain
-		blockExplorerURL = "https://mainnet.bitumdata.org"
-		defaultRPCPort = "9109"
+		blockExplorerURL = "https://explorer.bitum.io"
+		defaultRPCPort = "9209"
 	}
 
 	cfg.Listen = normalizeAddress(cfg.Listen, defaultListenPort)

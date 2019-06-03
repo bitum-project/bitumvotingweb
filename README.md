@@ -23,7 +23,7 @@ go install
 Start bitumd with the following options:
 
 ```no-highlight
-bitumd --testnet -u USER -P PASSWORD --rpclisten=127.0.0.1:19109 --rpccert=$HOME/.bitumd/rpc.cert
+bitumd --testnet -u USER -P PASSWORD --rpclisten=127.0.0.1:19209 --rpccert=$HOME/.bitumd/rpc.cert
 ```
 
 Start bitumvotingweb:
